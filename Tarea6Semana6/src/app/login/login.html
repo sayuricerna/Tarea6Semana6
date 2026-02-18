@@ -1,0 +1,14 @@
+<form [formGroup]="form" (ngSubmit)="grabar()">
+<div>
+<label>Email</label>
+<input type="email" formControlName="email" />
+</div>
+ 
+  <div>
+<label>Contraseña</label>
+<input type="password" formControlName="contrasenia" />
+</div>
+  <button type="submit" [disabled]="loading">
+    {{ loading ? 'Ingresando...' : 'Ingresar' }}
+</button>
+</form>
