@@ -24,15 +24,24 @@ export class Login {
 
   }
 
-  grabar(){
-    this.errorMsg="";
-    this.loading=true;
-    const usuario:ILogin = this.form.getRawValue()
-    this.loginService.login(usuario).subscribe(
-      dato =>{
-        console.log(dato)
+  grabar() {
+    if (this.form.invalid) return;
+
+    this.errorMsg = "";
+    this.loading = true;
+    const usuario: ILogin = this.form.getRawValue();
+
+    this.loginService.login(usuario).subscribe({
+      next: (dato) => {
+        this.loginService.carga_variable(dato); 
+        this.loading = false;
+        this.rutas.navigate(['/dashboard']);
+      },
+      error: (err) => {
+        this.errorMsg = "Credenciales inválidas. Intenta de nuevo.";
+        this.loading = false; 
       }
-    )
+    });
   }
 }
   

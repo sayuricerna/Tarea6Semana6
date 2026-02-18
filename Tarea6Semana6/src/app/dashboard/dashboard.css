@@ -1,0 +1,33 @@
+.avatar-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.25);
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255,255,255,0.5);
+}
+
+.dashboard-body {
+  min-height: calc(100vh - 56px);
+  background: #f5f0ff;
+}
+
+.text-purple {
+  color: #5a2d82;
+}
+
+.welcome-card {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(118, 75, 162, 0.3);
+}
+
+.badge.text-purple {
+  color: #5a2d82 !important;
+}
