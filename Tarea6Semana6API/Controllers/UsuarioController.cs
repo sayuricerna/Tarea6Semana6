@@ -43,7 +43,7 @@ namespace Tarea6Semana6API.Controllers
             return Ok(new
             {
                 id = us.id,
-                nombre = us.Nombres,
+                //nombre = us.Nombres,
                 email = us.Email,
             });
         }

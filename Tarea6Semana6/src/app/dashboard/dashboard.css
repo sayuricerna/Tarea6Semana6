@@ -1,33 +1,78 @@
-.avatar-circle {
-  width: 36px;
-  height: 36px;
+:host {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar simple */
+.navbar {
+  background: #333333 !important;
+  padding: 0.7rem 1.5rem;
+}
+
+.navbar .text-light {
+  color: #ffffff !important;
+}
+
+/* Avatar */
+.avatar {
+  background: #ffffff;
+  color: #333333;
+  font-weight: bold;
   border-radius: 50%;
-  background: rgba(255,255,255,0.25);
-  color: white;
-  font-weight: 700;
-  font-size: 1rem;
+  width: 35px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgba(255,255,255,0.5);
 }
 
+/* Botón logout */
+.btn-outline-light {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.btn-outline-light:hover {
+  background: #ffffff;
+  color: #333333;
+}
+
+/* Contenedor principal */
 .dashboard-body {
-  min-height: calc(100vh - 56px);
-  background: #f5f0ff;
-}
-
-.text-purple {
-  color: #5a2d82;
-}
-
-.welcome-card {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  border-radius: 16px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 2rem;
-  box-shadow: 0 10px 30px rgba(118, 75, 162, 0.3);
 }
 
-.badge.text-purple {
-  color: #5a2d82 !important;
+/* Tarjeta principal */
+.welcome-card {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 450px;
+}
+
+.welcome-card h5 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.welcome-card p {
+  margin-bottom: 0.5rem;
+  color: #555555;
+}
+
+/* Badge */
+.badge {
+  background: #eeeeee;
+  color: #333333;
+  padding: 0.4rem 0.7rem;
+  border-radius: 4px;
 }

@@ -5792,11 +5792,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sahil\\source\\repos\\Tarea6Semana6API\\Tarea6Semana6API.csproj",
+      "projectUniqueName": "C:\\Users\\sahil\\Desktop\\sayuri_cerna\\universidad\\repositorios\\RepositorioS6\\Tarea6Semana6\\Tarea6Semana6API\\Tarea6Semana6API.csproj",
       "projectName": "Tarea6Semana6API",
-      "projectPath": "C:\\Users\\sahil\\source\\repos\\Tarea6Semana6API\\Tarea6Semana6API.csproj",
+      "projectPath": "C:\\Users\\sahil\\Desktop\\sayuri_cerna\\universidad\\repositorios\\RepositorioS6\\Tarea6Semana6\\Tarea6Semana6API\\Tarea6Semana6API.csproj",
       "packagesPath": "C:\\Users\\sahil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sahil\\source\\repos\\Tarea6Semana6API\\obj\\",
+      "outputPath": "C:\\Users\\sahil\\Desktop\\sayuri_cerna\\universidad\\repositorios\\RepositorioS6\\Tarea6Semana6\\Tarea6Semana6API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

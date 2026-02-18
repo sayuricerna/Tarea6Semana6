@@ -1,11 +1,4 @@
-// import { Injectable } from '@angular/core';
 
-// @Injectable({
-//   providedIn: 'root',
-// })
-// export class AuthService {
-  
-// }
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ILogin } from '../interfaces/login.interface';
@@ -20,6 +13,7 @@ export class AuthService {
   constructor(private http: HttpClient) {}
 
   login(login: ILogin): Observable<any> {
+    console.log(login);
     return this.http.post<any>(this.RUTA_API + "/login", login); 
   }
 

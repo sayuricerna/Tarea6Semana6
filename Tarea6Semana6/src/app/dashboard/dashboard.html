@@ -3,19 +3,22 @@
   <div class="container-fluid px-4">
 
     <span class="navbar-brand fw-bold fs-5">
-      🟣 Mi App
+        <span class="text-light">Dashboard</span>
     </span>
 
     <div class="ms-auto d-flex align-items-center gap-3">
-      <!-- Avatar + nombre -->
-      <div class="d-flex align-items-center gap-2 text-white">
-        <div class="avatar-circle">{{ inicialNombre }}</div>
-        <span class="fw-semibold d-none d-md-inline">{{ nombreUsuario }}</span>
-      </div>
+
+        <!-- Usuario e inical-->
+        <div class="d-flex align-items-center gap-2">
+          <div class="avatar bg-light text-purple rounded-circle d-flex align-items-center justify-content-center" style="width: 35px; height: 35px;">
+            {{ nombreUsuario.charAt(0) }}
+          </div>
+          <span class="text-light">{{ nombreUsuario }}</span>
+        </div>
 
       <!-- Cerrar sesión -->
       <button class="btn btn-outline-light btn-sm rounded-pill px-3" (click)="cerrarSesion()">
-        🚪 Salir
+        -> Salir
       </button>
     </div>
 
@@ -26,8 +29,8 @@
 <div class="dashboard-body">
   <div class="container py-4">
 
-    <h4 class="mb-1 fw-bold text-purple">¡Hola, {{ nombreUsuario }}! 👋</h4>
-    <p class="text-muted mb-4">Has iniciado sesión correctamente.</p>
+    <h4 class="mb-1 fw-bold text-purple">Bienvenido, {{ nombreUsuario }}! </h4>
+    <p class="text-muted mb-4">El login ha funcionado.</p>
 
     <!-- Card de bienvenida -->
     <div class="welcome-card">
@@ -35,7 +38,9 @@
         <div class="col-md-8">
           <h5 class="fw-bold text-white mb-1">Sesión activa</h5>
           <p class="text-white-50 mb-2">Email: {{ emailUsuario }}</p>
-          <span class="badge bg-light text-purple">✅ Autenticado</span>
+            <p class="text-white-50 mb-2">Nombre: {{ nombreUsuario }}</p>
+
+          <span class="badge bg-light text-purple"> Autenticado</span>
         </div>
         <div class="col-md-4 text-end d-none d-md-block">
           <div style="font-size: 5rem; opacity: 0.3;">🛡️</div>

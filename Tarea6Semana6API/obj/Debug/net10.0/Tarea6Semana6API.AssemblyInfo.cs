@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tarea6Semana6API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8b10c14a24b1eb36a3307da0797693ec1adf622")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tarea6Semana6API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tarea6Semana6API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
